@@ -3,40 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Kebe Design Web</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Kebe Design Web</h1>
-    <p class="subtitle">Étudiant en développement web</p>
+  <nav>
+    <div class="logo">Kebe Design Web</div>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Bonjour, je suis <span>Kebe</span></h1>
+    <p>Étudiant en développement web passionné par le design et le code</p>
+    <a href="#contact" class="btn">Me contacter</a>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>À propos</h2>
-      <p>Bonjour ! Je suis passionné par le développement web et j'apprends Git, HTML, CSS et JavaScript.</p>
-    </section>
+  <section class="about" id="about">
+    <h2>À propos</h2>
+    <p>Je suis étudiant en développement web. J'apprends HTML, CSS, Git et JavaScript pour créer des sites modernes et professionnels.</p>
+  </section>
 
-    <section class="skills">
-      <h2>Compétences</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Git & GitHub</li>
-        <li>JavaScript (en cours)</li>
-      </ul>
-    </section>
+  <section class="skills" id="skills">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <p class="skill-icon">HTML5</p>
+        <p>Structure et sémantique</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-icon">CSS3</p>
+        <p>Design et mise en page</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-icon">Git</p>
+        <p>Versioning et GitHub</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-icon">JS</p>
+        <p>En cours d'apprentissage</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email : fkebe0846@gmail.com</p>
-    </section>
-  </main>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:fkebe0846@gmail.com">fkebe0846@gmail.com</a></p>
+    <p>GitHub : <a href="https://github.com/Kebe-design-web">github.com/Kebe-design-web</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 — Kebe Design Web</p>
+    <p>&copy; 2025 Kebe Design Web</p>
   </footer>
 
 </body>
