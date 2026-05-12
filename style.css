@@ -9,6 +9,7 @@ body {
   background: #f9f9f9;
   color: #222;
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -19,12 +20,14 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .logo {
   color: #e2b96f;
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -37,17 +40,75 @@ nav ul a {
   color: #ccc;
   text-decoration: none;
   font-size: 0.95rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #e2b96f;
+  transition: width 0.3s;
+}
+
+nav ul a:hover::after {
+  width: 100%;
 }
 
 nav ul a:hover {
   color: #e2b96f;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 2px;
+  background: white;
+  transition: all 0.3s;
+}
+
 .hero {
   background: #1a1a2e;
   color: white;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 7rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.particles {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  bottom: -10px;
+  background: rgba(226, 185, 111, 0.4);
+  border-radius: 50%;
+  animation: float linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -55,8 +116,16 @@ nav ul a:hover {
   margin-bottom: 1rem;
 }
 
-.hero h1 span {
+#typed {
   color: #e2b96f;
+  border-right: 2px solid #e2b96f;
+  padding-right: 4px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: #e2b96f; }
+  50% { border-color: transparent; }
 }
 
 .hero p {
@@ -72,10 +141,18 @@ nav ul a:hover {
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
 }
 
 .btn:hover {
   background: #c9a050;
+  transform: scale(1.05);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.4s ease;
 }
 
 section {
@@ -93,6 +170,17 @@ h2 {
   display: inline-block;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -106,13 +194,31 @@ h2 {
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .skill-icon {
   font-size: 1.3rem;
   font-weight: bold;
   color: #1a1a2e;
+  margin-bottom: 0.8rem;
+}
+
+.progress-bar {
+  background: #eee;
+  border-radius: 10px;
+  height: 8px;
   margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #e2b96f;
+  border-radius: 10px;
+  width: 0;
+  transition: width 1.5s ease;
 }
 
 .skill-card p {
@@ -129,6 +235,7 @@ h2 {
   color: #1a1a2e;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .contact a:hover {
@@ -142,4 +249,21 @@ footer {
   padding: 1.5rem;
   margin-top: 4rem;
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #1a1a2e;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+  nav ul.open { display: flex; }
+  .burger { display: flex; }
+  .hero h1 { font-size: 2rem; }
 }
