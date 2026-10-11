@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets · Fatou Kebe</title>
+<meta name="description" content="Portfolio de Fatou Kebe, étudiante en Analyse de Performance Digitale à l'ISEP de Diamniadio : data, IA, développement web et mobile, ERP et marketing digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Navigation principale">
+  <a class="mark" href="index.html">F. Kebe</a>
+  <ul><li><a href="accueil.html">Accueil</a></li><li><a href="projets.html" aria-current="page">Projets</a></li><li><a href="competences.html">Compétences</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav>
+
+<header class="pagehead">
+  <h1>Projets</h1>
+  <p>Projets académiques, hackathons et projets personnels réalisés entre 2025 et 2026. Le code est sur <a href="https://github.com/Kebe-design-web">mon GitHub</a>.</p>
+</header>
+<section style="padding-top:40px" aria-label="Liste des projets">
+<article class="proj feature">
+    <div>
+      <h3>Bokkna</h3>
+      <div class="ctx">Plateforme de vote électronique sécurisée · projet de fin d'études DISEP · équipe de 3 · 2026</div>
+      <div class="num">≈ 10 000<small>électeurs importés dans la base PostgreSQL</small></div>
+    </div>
+    <div>
+      <p>J'étais responsable de la base de données (schéma PostgreSQL de 10 tables) et des modules d'intelligence artificielle.</p>
+      <p>J'ai développé trois modules en Python : détection de fraude avec Isolation Forest, vérification d'identité des électeurs et analyse des résultats. Les bulletins sont chiffrés en RSA-2048, l'accès est protégé par JWT et code OTP.</p>
+      <ul class="stack"><li>PostgreSQL</li><li>Python</li><li>scikit-learn</li><li>Django REST</li><li>React</li><li>RSA-2048</li><li>JWT</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>STATSEN AI</h3><div class="ctx">Hackathon ANSD « Challenge 20 ans » · équipe de 3 · 2026</div></div>
+    <div>
+      <p>Plateforme d'aide à la décision qui exploite les données ouvertes de l'ANSD et répond en langage naturel à des questions sur les statistiques du Sénégal. Le moteur est couvert par 29 tests automatisés. J'ai aussi rédigé le dossier de candidature et le script du pitch vidéo.</p>
+      <ul class="stack"><li>Django</li><li>Python</li><li>Données ouvertes</li><li>Tests automatisés</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>FaceID</h3><div class="ctx">Reconnaissance faciale par deep learning · 2026</div></div>
+    <div>
+      <p>Réseau convolutif entraîné par transfer learning sur MobileNetV2, avec 97,92 % de précision, exposé par une API Django REST.</p>
+      <ul class="stack"><li>TensorFlow</li><li>Keras</li><li>MobileNetV2</li><li>Django REST</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>Modules ERP Odoo 17</h3><div class="ctx">Projets académiques · 2026</div></div>
+    <div>
+      <p>Un module de gestion scolaire (inscriptions, édition de certificats de scolarité en PDF) et un module de gestion de stock pharmaceutique.</p>
+      <ul class="stack"><li>Odoo 17</li><li>Python</li><li>XML</li><li>PDF</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>DiabCare</h3><div class="ctx">Application mobile de suivi du diabète · 2026</div></div>
+    <div>
+      <p>Application Flutter avec assistant IA, backend FastAPI, base PostgreSQL et authentification JWT.</p>
+      <ul class="stack"><li>Flutter</li><li>FastAPI</li><li>PostgreSQL</li><li>JWT</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>BirdSense AI</h3><div class="ctx">Hackathon APD, ISEP Diamniadio · 2026</div></div>
+    <div>
+      <p>Application d'identification d'oiseaux, avec une cartographie OpenStreetMap des zones humides du Sénégal.</p>
+      <ul class="stack"><li>Flutter</li><li>MVVM</li><li>Supabase</li><li>OpenStreetMap</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>SafeCity Sénégal</h3><div class="ctx">Signalement d'incidents urbains · projet personnel · 2026</div></div>
+    <div>
+      <p>Plateforme web avec trois rôles : citoyen, autorité et administrateur.</p>
+      <ul class="stack"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
+    </div>
+  </article>
+
+  <article class="proj">
+    <div><h3>Automatisations n8n</h3><div class="ctx">Travaux pratiques · 2026</div></div>
+    <div>
+      <p>Supervision d'une application Django toutes les 15 minutes : redémarrage automatique via SSH, alertes Gmail et journal dans Google Sheets.</p>
+      <ul class="stack"><li>n8n</li><li>SSH</li><li>Gmail</li><li>Google Sheets</li></ul>
+    </div>
+  </article>
+</section>
+<footer>© 2026 Fatou Kebe · <a href="contact.html">Me contacter</a></footer>
+</div>
+</body>
+</html>
