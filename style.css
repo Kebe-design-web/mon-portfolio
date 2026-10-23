@@ -535,3 +535,4 @@ footer a:hover { color: #fff; }
   .skh-motto { letter-spacing: 2px; }
   .skh-motto::before { width: 40px; }
 }
+.home-lead { color: var(--muted); font-size: 1.08rem; max-width: 760px; margin-bottom: 0.4rem; }
