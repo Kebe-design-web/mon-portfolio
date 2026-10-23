@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kebe Design Web</title>
+  <title>Kebe Design Web · Fatou Kebe</title>
   <meta name="description" content="Kebe Design Web, portfolio de Fatou Kebe : développement web, analyse de données, design web et marketing digital.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,12 @@
 <body>
 
   <nav>
-    <a href="#accueil" class="logo"><img src="images/logo-k.svg" alt="" width="34" height="32"><span><b>KEBE</b> DESIGN WEB</span></a>
+    <a href="index.html" class="logo"><img src="images/logo-k.svg" alt="" width="34" height="32"><span><b>KEBE</b> DESIGN WEB</span></a>
     <ul id="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" aria-current="page">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="burger" id="burger" role="button" tabindex="0" aria-label="Ouvrir le menu">
       <span></span>
@@ -25,7 +26,6 @@
       <span></span>
     </div>
   </nav>
-
   <!-- ===================== BANNIÈRE D'ACCUEIL ===================== -->
   <header class="hero" id="accueil">
     <div class="hero-photo" aria-hidden="true"></div>
@@ -41,149 +41,54 @@
       </ul>
       <div class="hero-btns">
         <a href="https://github.com/Kebe-design-web" class="btn" target="_blank" rel="noopener">Découvrir mes projets <span class="arrow">→</span></a>
-        <a href="#contact" class="btn btn-outline">Me contacter</a>
+        <a href="contact.html" class="btn btn-outline">Me contacter</a>
       </div>
     </div>
   </header>
 
-  <!-- ===================== À PROPOS ===================== -->
-  <div class="page-banner" id="about">
-    <div class="pb-inner">
-      <div class="pb-text">
-        <span class="pb-kicker">À propos</span>
-        <h2>Une passion pour le <span class="blue">numérique</span>.</h2>
-        <p>Qui je suis, ce que j'apprends et ce qui me motive.</p>
-      </div>
-      <div class="pb-visual" aria-hidden="true">
-        <div class="pb-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
-        <span class="pb-hand">Apprendre · Créer · Progresser</span>
-      </div>
+  <section class="home-intro fade-in">
+    <span class="pb-kicker">Bienvenue</span>
+    <h2>Découvrez mon univers</h2>
+    <div class="home-cards">
+      <a class="home-card" href="about.html">
+        <span class="hc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span>
+        <h3>À propos</h3>
+        <p>Mon parcours à l'ISEP, mes objectifs et ma façon de travailler.</p>
+        <span class="hc-link">Lire mon parcours <span class="arrow">→</span></span>
+      </a>
+      <a class="home-card" href="competences.html">
+        <span class="hc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+        <h3>Compétences</h3>
+        <p>Web, mobile, data, IA, ERP, design et marketing : tout ce que j'utilise.</p>
+        <span class="hc-link">Voir mes compétences <span class="arrow">→</span></span>
+      </a>
+      <a class="home-card" href="contact.html">
+        <span class="hc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <h3>Contact</h3>
+        <p>Un stage, un emploi ou un projet ? Voici comment me joindre.</p>
+        <span class="hc-link">Me contacter <span class="arrow">→</span></span>
+      </a>
     </div>
-  </div>
-  <section class="about fade-in">
-    <p>Je suis étudiant en développement web. J'apprends HTML, CSS, Git et JavaScript pour créer des sites modernes et professionnels.</p>
-  </section>
-
-  <!-- ===================== COMPÉTENCES ===================== -->
-  <div class="page-banner alt" id="skills">
-    <div class="pb-inner">
-      <div class="pb-text">
-        <span class="pb-kicker">Compétences</span>
-        <h2>Mes outils pour <span class="blue">créer</span>.</h2>
-        <p>Les langages et technologies que j'utilise pour concevoir des sites modernes.</p>
-      </div>
-      <div class="pb-visual" aria-hidden="true">
-        <div class="pb-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
-        <span class="pb-hand">Code · Design · Impact</span>
-      </div>
-    </div>
-  </div>
-  <section class="skills fade-in">
-    <div class="skills-grid">
-      <div class="skill-card">
-        <p class="skill-icon">HTML5</p>
-        <div class="progress-bar"><div class="progress" data-width="85"></div></div>
-        <p>85%</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-icon">CSS3</p>
-        <div class="progress-bar"><div class="progress" data-width="75"></div></div>
-        <p>75%</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-icon">Git</p>
-        <div class="progress-bar"><div class="progress" data-width="65"></div></div>
-        <p>65%</p>
-      </div>
-      <div class="skill-card">
-        <p class="skill-icon">JS</p>
-        <div class="progress-bar"><div class="progress" data-width="40"></div></div>
-        <p>40%</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CONTACT ===================== -->
-  <div class="page-banner" id="contact">
-    <div class="pb-inner">
-      <div class="pb-text">
-        <span class="pb-kicker">Contact</span>
-        <h2>Travaillons <span class="blue">ensemble</span>.</h2>
-        <p>Un stage, un projet ou une question ? Écrivez-moi, je réponds à tous les messages.</p>
-      </div>
-      <div class="pb-visual" aria-hidden="true">
-        <div class="pb-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-        <span class="pb-hand">À très bientôt !</span>
-      </div>
-    </div>
-  </div>
-  <section class="contact fade-in">
-    <p>Email : <a href="mailto:fkebe0846@gmail.com">fkebe0846@gmail.com</a></p>
-    <p>GitHub : <a href="https://github.com/Kebe-design-web">github.com/Kebe-design-web</a></p>
   </section>
 
   <footer>
-    <p>&copy; <span id="year">2026</span> Kebe Design Web</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light"><img src="images/logo-k-blanc.svg" alt="" width="30" height="28"><span><b>KEBE</b> DESIGN WEB</span></a>
+        <p>Portfolio de Fatou Kebe, étudiante en Analyse des Performances Digitales à l'ISEP de Diamniadio.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul><li><a href="index.html">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="competences.html">Compétences</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul><li><a href="mailto:fkebe0846@gmail.com">fkebe0846@gmail.com</a></li><li><a href="tel:+221788284097">+221 78 828 40 97</a></li><li>Dakar, Sénégal</li></ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year">2026</span> Fatou Kebe · Kebe Design Web</p>
   </footer>
 
-  <script>
-    // Flèche du bouton qui glisse
-    const arrow = document.querySelector('.arrow');
-    setInterval(() => {
-      arrow.style.transform = 'translateX(4px)';
-      setTimeout(() => arrow.style.transform = 'translateX(0)', 400);
-    }, 1200);
-
-    // Apparition au scroll + barres de compétences
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          e.target.querySelectorAll('.progress').forEach(bar => {
-            bar.style.width = bar.dataset.width + '%';
-          });
-        }
-      });
-    }, { threshold: 0.2 });
-    document.querySelectorAll('.fade-in, .page-banner').forEach(el => observer.observe(el));
-
-    // Scroll smooth + fermeture du menu mobile
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('nav-links');
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (!target) return;
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-        navLinks.classList.remove('open');
-        burger.classList.remove('active');
-      });
-    });
-
-    // Menu burger
-    function toggleMenu() {
-      navLinks.classList.toggle('open');
-      burger.classList.toggle('active');
-    }
-    burger.addEventListener('click', toggleMenu);
-    burger.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); } });
-
-    // Effet de survol sur les cartes
-    document.querySelectorAll('.skill-card').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        card.style.transform = `perspective(600px) rotateY(${x / 10}deg) rotateX(${-y / 10}deg) translateY(-5px)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(600px) rotateY(0) rotateX(0) translateY(0)';
-      });
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
