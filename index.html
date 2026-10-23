@@ -4,40 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kebe Design Web</title>
+  <meta name="description" content="Kebe Design Web, portfolio de Fatou Kebe : développement web, analyse de données, design web et marketing digital.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
-    <div class="logo">Kebe Design Web</div>
+    <a href="#accueil" class="logo"><img src="images/logo-k.svg" alt="" width="34" height="32"><span><b>KEBE</b> DESIGN WEB</span></a>
     <ul id="nav-links">
       <li><a href="#about">À propos</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="burger" id="burger">
+    <div class="burger" id="burger" role="button" tabindex="0" aria-label="Ouvrir le menu">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="particles" id="particles"></div>
+  <!-- ===================== BANNIÈRE D'ACCUEIL ===================== -->
+  <header class="hero" id="accueil">
+    <div class="hero-photo" aria-hidden="true"></div>
     <div class="hero-content">
-      <h1>Bonjour, je suis <span id="typed"></span></h1>
-      <p>Étudiant en développement web passionné par le design et le code</p>
-      <a href="#about" class="btn">Découvrir <span class="arrow">↓</span></a>
+      <div class="hero-brand"><img src="images/logo-k.svg" alt="" width="56" height="52"><span><b>KEBE</b> DESIGN WEB</span></div>
+      <h1>Je conçois des expériences <span class="blue">web modernes</span> et utiles.</h1>
+      <p class="hero-sub">Étudiante en Analyse des Performances Digitales, je m'intéresse au développement web, à l'analyse de données et à l'intelligence artificielle.</p>
+      <ul class="hero-domains">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Développement<br>web</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="13" width="4" height="7" rx="1"/><rect x="10" y="9" width="4" height="11" rx="1"/><rect x="17" y="4" width="4" height="16" rx="1"/></svg>Analyse<br>de données</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/><circle cx="8.5" cy="15.5" r="1.2"/></svg>Design<br>web</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4h4l7 4V6L7 10z"/><path d="M18 9a4 4 0 0 1 0 6"/><path d="M8 14l1 5h3l-1-4"/></svg>Marketing<br>digital</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="https://github.com/Kebe-design-web" class="btn" target="_blank" rel="noopener">Découvrir mes projets <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
     </div>
   </header>
 
-  <section class="about fade-in" id="about">
-    <h2>À propos</h2>
+  <!-- ===================== À PROPOS ===================== -->
+  <div class="page-banner" id="about">
+    <div class="pb-inner">
+      <div class="pb-text">
+        <span class="pb-kicker">À propos</span>
+        <h2>Une passion pour le <span class="blue">numérique</span>.</h2>
+        <p>Qui je suis, ce que j'apprends et ce qui me motive.</p>
+      </div>
+      <div class="pb-visual" aria-hidden="true">
+        <div class="pb-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
+        <span class="pb-hand">Apprendre · Créer · Progresser</span>
+      </div>
+    </div>
+  </div>
+  <section class="about fade-in">
     <p>Je suis étudiant en développement web. J'apprends HTML, CSS, Git et JavaScript pour créer des sites modernes et professionnels.</p>
   </section>
 
-  <section class="skills fade-in" id="skills">
-    <h2>Compétences</h2>
+  <!-- ===================== COMPÉTENCES ===================== -->
+  <div class="page-banner alt" id="skills">
+    <div class="pb-inner">
+      <div class="pb-text">
+        <span class="pb-kicker">Compétences</span>
+        <h2>Mes outils pour <span class="blue">créer</span>.</h2>
+        <p>Les langages et technologies que j'utilise pour concevoir des sites modernes.</p>
+      </div>
+      <div class="pb-visual" aria-hidden="true">
+        <div class="pb-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <span class="pb-hand">Code · Design · Impact</span>
+      </div>
+    </div>
+  </div>
+  <section class="skills fade-in">
     <div class="skills-grid">
       <div class="skill-card">
         <p class="skill-icon">HTML5</p>
@@ -62,54 +103,38 @@
     </div>
   </section>
 
-  <section class="contact fade-in" id="contact">
-    <h2>Contact</h2>
+  <!-- ===================== CONTACT ===================== -->
+  <div class="page-banner" id="contact">
+    <div class="pb-inner">
+      <div class="pb-text">
+        <span class="pb-kicker">Contact</span>
+        <h2>Travaillons <span class="blue">ensemble</span>.</h2>
+        <p>Un stage, un projet ou une question ? Écrivez-moi, je réponds à tous les messages.</p>
+      </div>
+      <div class="pb-visual" aria-hidden="true">
+        <div class="pb-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <span class="pb-hand">À très bientôt !</span>
+      </div>
+    </div>
+  </div>
+  <section class="contact fade-in">
     <p>Email : <a href="mailto:fkebe0846@gmail.com">fkebe0846@gmail.com</a></p>
     <p>GitHub : <a href="https://github.com/Kebe-design-web">github.com/Kebe-design-web</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Kebe Design Web</p>
+    <p>&copy; <span id="year">2026</span> Kebe Design Web</p>
   </footer>
 
   <script>
-    // Particules animées dans le hero
-    const container = document.getElementById('particles');
-    for (let i = 0; i < 30; i++) {
-      const p = document.createElement('div');
-      p.classList.add('particle');
-      p.style.left = Math.random() * 100 + 'vw';
-      p.style.animationDelay = Math.random() * 5 + 's';
-      p.style.animationDuration = (Math.random() * 5 + 4) + 's';
-      p.style.width = p.style.height = (Math.random() * 8 + 4) + 'px';
-      container.appendChild(p);
-    }
-
-    // Effet de frappe
-    const words = ['Kebe', 'un Designer', 'un Développeur'];
-    let i = 0, j = 0, deleting = false;
-    function type() {
-      const word = words[i];
-      const typed = document.getElementById('typed');
-      if (!deleting) {
-        typed.textContent = word.substring(0, j++);
-        if (j > word.length) { deleting = true; setTimeout(type, 1500); return; }
-      } else {
-        typed.textContent = word.substring(0, j--);
-        if (j < 0) { deleting = false; i = (i + 1) % words.length; }
-      }
-      setTimeout(type, deleting ? 60 : 100);
-    }
-    type();
-
-    // Flèche qui rebondit
+    // Flèche du bouton qui glisse
     const arrow = document.querySelector('.arrow');
     setInterval(() => {
-      arrow.style.transform = 'translateY(-8px)';
-      setTimeout(() => arrow.style.transform = 'translateY(0)', 400);
-    }, 800);
+      arrow.style.transform = 'translateX(4px)';
+      setTimeout(() => arrow.style.transform = 'translateX(0)', 400);
+    }, 1200);
 
-    // Apparition au scroll
+    // Apparition au scroll + barres de compétences
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -120,23 +145,29 @@
         }
       });
     }, { threshold: 0.2 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in, .page-banner').forEach(el => observer.observe(el));
 
-    // Scroll smooth
+    // Scroll smooth + fermeture du menu mobile
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
         e.preventDefault();
-        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('open');
+        burger.classList.remove('active');
       });
     });
 
     // Menu burger
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('nav-links');
-    burger.addEventListener('click', () => {
+    function toggleMenu() {
       navLinks.classList.toggle('open');
       burger.classList.toggle('active');
-    });
+    }
+    burger.addEventListener('click', toggleMenu);
+    burger.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); } });
 
     // Effet de survol sur les cartes
     document.querySelectorAll('.skill-card').forEach(card => {
@@ -150,6 +181,8 @@
         card.style.transform = 'perspective(600px) rotateY(0) rotateX(0) translateY(0)';
       });
     });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
 </body>
